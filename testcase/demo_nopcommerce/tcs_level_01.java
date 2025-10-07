@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class testcase_demo_level_01 {
+public class tcs_level_01 {
     WebDriver driver;
 
     @BeforeClass
