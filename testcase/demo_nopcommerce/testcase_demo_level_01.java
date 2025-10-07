@@ -1,4 +1,4 @@
-package dropdown;
+package demo_nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class handleDropdown {
+public class testcase_demo_level_01 {
     WebDriver driver;
 
     @BeforeClass
