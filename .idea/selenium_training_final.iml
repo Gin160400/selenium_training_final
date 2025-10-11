@@ -2,9 +2,15 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/PatterObject" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/commons" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pageUIs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testcase" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="selenium-server-4.36.0" level="project" />
+    <orderEntry type="library" name="selenium-server-4.28.0" level="project" />
   </component>
 </module>
