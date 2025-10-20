@@ -7,10 +7,14 @@
       <sourceFolder url="file://$MODULE_DIR$/commons" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/pageUIs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testcase" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/actions/PatternObject" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/actions/commons" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/interface/pageUIs" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="selenium-server-4.36.0" level="project" />
+    <orderEntry type="library" name="selenium-server-4.28.0" level="project" />
     <orderEntry type="library" name="selenium-server-4.28.0" level="project" />
   </component>
 </module>

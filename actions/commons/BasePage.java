@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,11 +25,11 @@ public class BasePage {
         return driver.findElement(getByCssSelector(location));
     }
     //Common wait
-    public WebElement waitElementVisible(WebDriver driver, String location){
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(getByCssSelector(location)));
+    public void waitElementVisible(WebDriver driver, String location){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(getByCssSelector(location)));
     }
-    public WebElement waitElementClickable(WebDriver driver, String location){
-        return wait.until(ExpectedConditions.elementToBeClickable(getByCssSelector(location)));
+    public void waitElementClickable(WebDriver driver, String location){
+        wait.until(ExpectedConditions.elementToBeClickable(getByCssSelector(location)));
     }
 
     //Common action
@@ -108,6 +107,7 @@ public class BasePage {
         for (String runWindows : allWindows) {
             driver.switchTo().window(runWindows);
             String currentWin = driver.getTitle();
+            assert currentWin != null;
             if (currentWin.equals(title)) {
                 break;
             }

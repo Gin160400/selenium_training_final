@@ -28,6 +28,28 @@ public class tcsLevel01 {
         registerPage = new RegisterPageObject();
     }
 
+    @Test
+    public void TC_02_Register(){
+        registerPage.genderMaleCheckbox();
+        registerPage.firstNameTextbox();
+        registerPage.lastNameTextbox();
+        registerPage.companyNameTextbox();
+        registerPage.passwordTextbox();
+        registerPage.confirmPasswordTextbox();
+        registerPage.clickRegisterLink();
+        registerPage.confirmText();
+        registerPage.clickToContinueLink();
+        registerPage.clickToMyAccountLink();
+
+        myAccountPage = new MyAccountPageObject();
+    }
+
+    @Test
+    public void TC_03_ComfirmInfo(){
+
+    }
+
+
     @AfterClass
     public void afterClass(){
         driver.quit();
